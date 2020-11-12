@@ -1,0 +1,52 @@
+@font-face{
+	font-family: SF-Pro-Text-Bold;
+	src: url("SF-Pro/SF-Pro-Text-Bold.otf");
+}
+
+@font-face{
+	font-family: SF-Pro-Text-Light;
+	src: url("SF-Pro/SF-Pro-Text-Light.otf");
+}
+
+@font-face{
+	font-family: SF-Pro-Text-Medium;
+	src: url("SF-Pro/SF-Pro-Text-Medium.otf");
+}
+
+.nav-item{
+	margin-bottom: 10px;
+	margin-top: 5px;
+
+}
+
+.h1{
+	text-align: center;
+}
+
+.images{
+	width: 800px;
+	height: 700px;
+	overflow: hidden;
+}
+
+.jumbotron{
+	background-color: black;
+	color: white;
+}
+
+.alert{
+	text-align: middle;
+	color: black;
+}
+
+.active{
+	background-color: black !important;
+}
+
+@media only screen and (max-width: 480px) {
+	.images{
+		width: 100%;
+		height: auto;
+	}
+}
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <link rel = "stylesheet" href = "stylesheet.css">
+    <!-- <link rel="stylesheet" media="only screen and (min-width: 961px)" href="stylesheet.css">
+
+
+    <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 960px)" href="tablet.css">
+
+  	
+    <link rel="stylesheet" media="only screen and (max-width: 480px)" href="mobile.css"> -->
+
+
+
+    <meta charset="UTF-8">
+    <title>Main</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+    <script src="color.js"> </script>
+    <script src="velocityJS/velocity.js"> </script>
+    <script src="https://code.createjs.com/1.0.0/soundjs.min.js"></script>
+
+
+
+    <script src = "custom.js"> </script> 
+
+   
+
+  </head>
+  <body onload = "loadSound();">
+
+    <div class = "head"> 
+      <div class = "head-flex"> <a class = "nav-item" href = "keyboards/index.html"> Keyboards </a> </div>
+      <div class = "head-flex"> <a class = "nav-item" href = "birds/index.html" >Birds </a> </div>
+      <div class = "head-main"> <img class = "icon" src = "images/globe.png"> </div>
+      <div class = "head-flex"> <a class = "nav-item" href = "padoru/index.html"> Padoru </a> </div>
+      <div class = "head-flex"> <a class = "nav-item" href = "melee/index.html"> The Magic </a> </div>
+    </div>
+
+  	<div class = "flex-container">
+      <div class = "main" id = "left-main">
+        A Website about Me <br> <p id = "left-main-body"> N14094132 </p> <p id = "left-main-body"> Thomas Han </p> 
+        <p id = "left-main-body"> Also Formerly Known as "T-Han" </p> 
+      </div>
+      <div class = "main" id = "right-main"> <p id = "right-main-text"> My Interests </p> <img id = "interests" src = "images/interests.png"> </div>
+    </div>
+
+    
+
+
+
+ 	  <div class = "flex-container"> 
+  		<div class = "flex-elem"> <a href = "padoru/index.html"> <img id = "padoru" class = "pageLink" src = "images/padoru.gif"> </a>
+        <p class = "nav-desc"> Christmas time is coming! Are you ready for this year's holiday cheer? Probably not. Click on this spinning Santa to learn more about how to spread Christmas cheer. </p>
+      </div>
+  		<div class = "flex-elem"> <a href = "birds/index.html"> <img id = "bird" class = "pageLink" src = "images/bird.png"> </a>
+       <p class = "nav-desc"> What if this bird suddenly grew two more limbs? What if they were arms? Very exciting, click the bird to find out more. </p> 
+     </div>
+  		<div class = "flex-elem"> <a href = "keyboards/index.html"> <img id = "keyboardMeme" class = "pageLink" src = "images/keyboardLink.jpg"> </a> </div>
+  		<div class = "flex-elem"> <a href = "melee/index.html"> <img id = "shine" class = "pageLink" src = "images/shine.png"> </a> 
+        <p onclick = "playSound();" class = "playSound" id = "shine-text"> Hyah! </p> 
+      </div>
+  	</div>
+
+    <div class = "bottom"> bottom </div>
+
+   <!-- <div class = "float-elem"> float </div>
+    <div class = "float-elem"> float </div>
+    <div class = "float-elem"> float </div>
+    <div class = "float-elem"> float </div> -->
+
+  
+  </body>
+</html>

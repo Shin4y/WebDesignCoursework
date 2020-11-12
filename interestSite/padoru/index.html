@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<link rel = "stylesheet" href = "stylesheet.css">
+	<meta charset = "UTF-8">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+  <script src="../color.js"> </script>
+  <script src="../velocityJS/velocity.js"> </script>
+  <script src="https://code.createjs.com/1.0.0/soundjs.min.js"></script>
+
+
+  <script> 
+    $(document).ready(function(){
+         $(".nav-item").hover(function(){
+            var nav = $(this);
+            console.log("nav item entered");
+            nav.animate({color: "#0000ff"}, "fast");
+         },
+
+        function(){
+            console.log("nav-item left");
+            var nav = $(this);
+            nav.animate({color:"#FFFFFF"}, "fast");  
+        });
+
+        $(".icon").hover(function(){
+          var nav = $(this);
+          nav.velocity({scale: 1.5}, "fast");
+        },
+
+        function(){
+          var nav = $(this);
+          nav.velocity({scale: 1}, "fast");
+        });
+
+        $("#padoru-text").velocity({rotateY: "360deg"}, {loop: true, delay: 0, duration: 5000},);
+
+      
+      });
+
+  </script>
+
+   <script> 
+    var soundID = "padoru";
+
+    function loadSound () {
+      createjs.Sound.registerSound("../sound/christmas.mp3", soundID);
+    }
+
+    function playSound () {
+      createjs.Sound.play(soundID);
+    }
+
+  </script>
+
+
+
+
+</head> 
+
+<title> Padoru! </title>
+
+<body onload = "loadSound()";>
+	<div class = "head"> 
+      <div class = "head-flex"> <a class = "nav-item" href = "../keyboards/index.html"> Keyboards </a> </div>
+      <div class = "head-flex"> <a class = "nav-item" href = "../birds/index.html" >Birds </a> </div>
+      <div class = "head-main"> <a href = "../index.html"> <img class = "icon" src = "../images/globe.png"> </a> </div>
+      <div class = "head-flex"> <a class = "nav-item" href = "../padoru/index.html"> Padoru </a> </div>
+      <div class = "head-flex"> <a class = "nav-item" href = "../melee/index.html"> The Magic </a> </div>
+    </div>
+
+    <div id = "flex-container">
+    	<div class = "main"> 
+    		<p onclick = "playSound();" class = "playsound" id = "padoru-text"> You've been Tricked! This page has nothing to do with Christmas </p>
+    	</div>
+    </div>
+
+
+</html>
